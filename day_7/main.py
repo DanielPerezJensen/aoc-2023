@@ -79,8 +79,7 @@ def part_1(data):
         solution += item[1] * (i + 1)
 
     print(solution)
-
-    # submit(solution, part="a", day=4, year=2023)
+    submit(solution, part="a", day=4, year=2023)
 
 
 def compare_hand2(hand1, hand2):
@@ -90,7 +89,15 @@ def compare_hand2(hand1, hand2):
     count2 = count_hand(hand2, cards)
 
     # Since simply setting the joker card to the highest current card is the most effective
-    # we can just add the number of jokers to the count ranking
+    # we can just add the number of jokers to the highest current card
+    # X Y Z are any card that is not an A, K, Q or J
+
+    # A A A A A J = 6 -> A A A A A A = 7
+    # A A A A J X = 5 -> A A A A A X = 6
+    # A A A Q X J = 4 -> A A A Q X Q = 5
+    # A A K K J X = 3 -> A A K K K X = 4
+    # A A K J X Y = 2 -> A A K K X Y = 3
+    # A K J X Y Z = 1 -> A K K X Y Z = 2
 
     count1_jokers = count1[-1]
     count1[-1] = 0
@@ -129,7 +136,6 @@ def part_2(data):
         solution += item[1] * (i + 1)
 
     print(solution)
-
     submit(solution, part="b", day=4, year=2023)
 
 
