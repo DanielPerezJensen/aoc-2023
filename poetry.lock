@@ -23,13 +23,13 @@ nb = ["IPython", "jupyter-server"]
 
 [[package]]
 name = "aocd-example-parser"
-version = "2023.2"
+version = "2023.12.2"
 description = "Implementation of example parser plugins for advent-of-code-data"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "aocd_example_parser-2023.2-py3-none-any.whl", hash = "sha256:7baabde61727c73a5a8fe5f5d578f095ddcb7fe6fdaabdacc79343293be86320"},
-    {file = "aocd_example_parser-2023.2.tar.gz", hash = "sha256:8fb225ec31f423f85cbcf6f7b92c0a5873b3108f83e645d67b10006fd8773a8e"},
+    {file = "aocd_example_parser-2023.12.2-py3-none-any.whl", hash = "sha256:5768994681d5ed77ac51b315a4ea67b7d29ac47c4cf15b2c718449f7d8dc253b"},
+    {file = "aocd_example_parser-2023.12.2.tar.gz", hash = "sha256:e287532cfaa450fd8594d143e63eec45a49f9fd5584666cc23215a094c558ae5"},
 ]
 
 [[package]]
@@ -49,6 +49,24 @@ soupsieve = ">1.2"
 [package.extras]
 html5lib = ["html5lib"]
 lxml = ["lxml"]
+
+[[package]]
+name = "networkx"
+version = "3.2.1"
+description = "Python package for creating and manipulating graphs and networks"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "networkx-3.2.1-py3-none-any.whl", hash = "sha256:f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2"},
+    {file = "networkx-3.2.1.tar.gz", hash = "sha256:9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6"},
+]
+
+[package.extras]
+default = ["matplotlib (>=3.5)", "numpy (>=1.22)", "pandas (>=1.4)", "scipy (>=1.9,!=1.11.0,!=1.11.1)"]
+developer = ["changelist (==0.4)", "mypy (>=1.1)", "pre-commit (>=3.2)", "rtoml"]
+doc = ["nb2plots (>=0.7)", "nbconvert (<7.9)", "numpydoc (>=1.6)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.14)", "sphinx (>=7)", "sphinx-gallery (>=0.14)", "texext (>=0.6.7)"]
+extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.11)", "sympy (>=1.10)"]
+test = ["pytest (>=7.2)", "pytest-cov (>=4.0)"]
 
 [[package]]
 name = "numpy"
@@ -147,4 +165,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e7e93cacc3235150d769b60e107bb37ba169fd285bd0bde22e8c0d2d38a24bfb"
+content-hash = "dde87466cca57bd406da8088a54ae200fdf6ee36327123d728be550db54fd2f8"
