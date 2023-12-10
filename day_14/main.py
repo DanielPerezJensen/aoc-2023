@@ -10,18 +10,18 @@ def parse_data(data):
 
 def part_1(data):
     pass
-    # submit(solution, part="a", day=11, year=2023)
+    # submit(solution, part="a", day=14, year=2023)
 
 
 def part_2(data):
     pass
-    # submit(solution, part="b", day=11, year=2023)
+    # submit(solution, part="b", day=14, year=2023)
 
 
 data = """"""
 
 
-# data = get_data(day=11, year=2023)
+# data = get_data(day=14, year=2023)
 
 part_1(data)
 part_2(data)
